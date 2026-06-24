@@ -3,29 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CAROLINA THOMPSON CORRETORA DE SEGUROS LTDA - Especialista em seguros, planos de saúde e previdência complementar no Rio de Janeiro.">
-    <title>CAROLINA THOMPSON | Corretora de Seguros</title>
+    <title>Carolina Thompson Corretora de Seguros</title>
+    <meta name="description" content="Corretora de Seguros em Rio de Janeiro - Planos de Saúde, Previdência Complementar e Seguros em Geral.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
-        
-        :root {
-            --primary: #1e40af;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
         
         body {
-            font-family: 'Inter', system_ui, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
-        .heading-font {
-            font-family: 'Playfair Display', sans-serif;
-        }
-
         .hero-bg {
-            background: linear-gradient(rgba(30, 64, 175, 0.85), rgba(30, 64, 175, 0.9)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
         }
-
+        
         .nav-link {
             transition: all 0.3s ease;
         }
@@ -34,7 +26,7 @@
             color: #3b82f6;
             transform: translateY(-2px);
         }
-
+        
         .service-card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -43,82 +35,86 @@
             transform: translateY(-12px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
-
+        
         .footer {
-            background: linear-gradient(to right, #1e3a8a, #1e40af);
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                        CT
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold text-blue-900 heading-font">CAROLINA THOMPSON</h1>
-                        <p class="text-xs text-blue-600 -mt-1">Corretora de Seguros</p>
-                    </div>
-                </div>
-                
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                    <a href="#sobre" class="nav-link text-gray-700 hover:text-blue-700">Sobre</a>
-                    <a href="#servicos" class="nav-link text-gray-700 hover:text-blue-700">Serviços</a>
-                    <a href="#contato" class="nav-link text-gray-700 hover:text-blue-700">Contato</a>
-                </div>
 
-                <div class="flex items-center gap-4">
-                    <a href="tel:+552181204081" 
-                       class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all">
-                        <i class="fas fa-phone"></i>
-                        <span>(21) 8120-4081</span>
-                    </a>
-                    <button onclick="toggleMobileMenu()" 
-                            class="md:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700">
-                        <i class="fas fa-bars"></i>
-                    </button>
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-inner">
+                    CT
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">Carolina Thompson</h1>
+                    <p class="text-xs text-blue-600 font-medium -mt-1">Corretora de Seguros</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- MOBILE MENU -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-            <div class="px-6 py-6 flex flex-col gap-6 text-lg">
-                <a href="#sobre" onclick="toggleMobileMenu()" class="font-medium">Sobre Nós</a>
-                <a href="#servicos" onclick="toggleMobileMenu()" class="font-medium">Nossos Serviços</a>
-                <a href="#contato" onclick="toggleMobileMenu()" class="font-medium">Contato</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Início</a>
+                <a href="#sobre" class="nav-link text-gray-700 hover:text-blue-600">Sobre</a>
+                <a href="#servicos" class="nav-link text-gray-700 hover:text-blue-600">Serviços</a>
+                <a href="#contato" class="nav-link text-gray-700 hover:text-blue-600">Contato</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="tel:2181204081" class="hidden sm:flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+                    <i class="fas fa-phone"></i>
+                    (21) 8120-4081
+                </a>
+                <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-sm font-semibold transition">
+                    Fale Conosco
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero-bg text-white py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="max-w-3xl mx-auto">
-                <p class="inline-block bg-white/20 backdrop-blur-md text-sm font-medium px-5 py-2 rounded-full mb-6">
+    <section id="home" class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 pt-20">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm mb-6">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                     CNPJ 49.637.066/0001-86
-                </p>
-                <h1 class="text-5xl md:text-7xl font-bold heading-font leading-tight mb-6">
-                    Protegendo o que <span class="text-amber-300">mais importa</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-10 text-blue-100">
-                    Corretora de Seguros especializada em proteção patrimonial, saúde e previdência no Rio de Janeiro.
+                </div>
+                
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Protegendo o que é mais importante <span class="text-blue-400">para você</span>
+                </h2>
+                
+                <p class="text-xl text-gray-200 mb-10">
+                    Corretora especializada em seguros, planos de saúde e previdência complementar no Rio de Janeiro.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contato" 
-                       class="bg-white text-blue-700 hover:bg-blue-50 font-semibold px-10 py-5 rounded-2xl text-lg inline-flex items-center justify-center gap-3 transition-all">
-                        <span>Falar com Especialista</span>
-                        <i class="fas fa-arrow-right"></i>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" 
+                            class="bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-2xl font-semibold text-lg flex items-center gap-3 transition">
+                        <i class="fas fa-handshake"></i>
+                        Fazer Cotação
+                    </button>
+                    <a href="tel:2181204081" 
+                       class="border-2 border-white/80 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold text-lg flex items-center gap-3 transition">
+                        <i class="fas fa-phone"></i>
+                        Ligar Agora
                     </a>
-                    <a href="https://wa.me/552181204081" target="_blank"
-                       class="border border-white/70 hover:bg-white/10 font-semibold px-8 py-5 rounded-2xl text-lg inline-flex items-center justify-center gap-3 transition-all">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                        <span>WhatsApp</span>
-                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center gap-8 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Atendimento Personalizado</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span>Melhores Seguradoras</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,43 +125,62 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                        <i class="fas fa-shield-alt"></i>
-                        MAIS DE 10 ANOS DE EXPERIÊNCIA
-                    </div>
-                    <h2 class="text-4xl md:text-5xl font-bold heading-font text-blue-900 mb-8">
-                        Carolina Thompson Corretora de Seguros
-                    </h2>
-                    <div class="prose text-lg text-gray-600 space-y-6">
-                        <p>
-                            Somos uma corretora de seguros com foco em soluções personalizadas para proteger seu patrimônio, 
-                            sua saúde e seu futuro financeiro.
-                        </p>
-                        <p>
-                            Atuamos com transparência, ética e dedicação, oferecendo as melhores opções do mercado em seguros, 
-                            planos de saúde e previdência complementar.
-                        </p>
+                    <div class="uppercase tracking-widest text-blue-600 font-semibold text-sm mb-3">QUEM SOMOS</div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Carolina Thompson Corretora de Seguros LTDA</h2>
+                    <div class="prose prose-lg text-gray-600">
+                        <p>Somos uma corretora de seguros com foco em soluções personalizadas para pessoas físicas e jurídicas.</p>
+                        <p>Atuamos com transparência, ética e compromisso, oferecendo os melhores planos de <strong>seguros</strong>, <strong>previdência complementar</strong> e <strong>planos de saúde</strong>.</p>
                     </div>
                     
-                    <div class="mt-10 grid grid-cols-3 gap-8">
+                    <div class="mt-10 grid grid-cols-3 gap-6">
                         <div>
-                            <div class="text-4xl font-bold text-blue-600">100%</div>
-                            <div class="text-sm text-gray-500">Personalização</div>
+                            <div class="text-3xl font-bold text-blue-600">10+</div>
+                            <div class="text-sm text-gray-500">Anos de Experiência</div>
                         </div>
                         <div>
-                            <div class="text-4xl font-bold text-blue-600">+50</div>
-                            <div class="text-sm text-gray-500">Parceiras</div>
+                            <div class="text-3xl font-bold text-blue-600">500+</div>
+                            <div class="text-sm text-gray-500">Clientes Satisfeitos</div>
                         </div>
                         <div>
-                            <div class="text-4xl font-bold text-blue-600">24h</div>
-                            <div class="text-sm text-gray-500">Suporte</div>
+                            <div class="text-3xl font-bold text-blue-600">15+</div>
+                            <div class="text-sm text-gray-500">Seguradoras Parceiras</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" 
-                         alt="Profissional de seguros" class="w-full h-full object-cover">
+                <div class="bg-gray-100 rounded-3xl p-8">
+                    <div class="bg-white rounded-2xl p-8 shadow">
+                        <h3 class="font-semibold text-xl mb-6 flex items-center gap-3">
+                            <i class="fas fa-building text-blue-600"></i>
+                            Informações da Empresa
+                        </h3>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Razão Social:</span>
+                                <span class="font-medium text-right">CAROLINA THOMPSON CORRETORA DE SEGUROS LTDA</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">CNPJ:</span>
+                                <span class="font-medium">49.637.066/0001-86</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Endereço:</span>
+                                <span class="font-medium text-right">Av. Professor Plínio Bastos, 205<br>Olaria - Rio de Janeiro, RJ</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">CEP:</span>
+                                <span class="font-medium">21.021-350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Telefone:</span>
+                                <span class="font-medium">(21) 8120-4081</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">E-mail:</span>
+                                <span class="font-medium">carolaraujo1407@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,186 +190,156 @@
     <section id="servicos" class="py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold heading-font text-blue-900">Nossos Serviços</h2>
-                <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-                    Oferecemos as melhores soluções em proteção e planejamento financeiro
-                </p>
+                <span class="text-blue-600 font-semibold">NOSSOS SERVIÇOS</span>
+                <h2 class="text-4xl font-bold mt-3">Proteção Completa para Você e Sua Família</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="service-card bg-white rounded-3xl p-8 shadow-xl">
-                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-4xl mb-6">
-                        🏠
+                <div class="service-card bg-white rounded-3xl p-8 shadow">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🛡️
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4">Seguros Residenciais e Patrimoniais</h3>
+                    <h3 class="text-2xl font-semibold mb-3">Seguros em Geral</h3>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Residencial</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Empresarial</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Veículos</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Vida</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Seguro de Vida</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Seguro Auto</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Seguro Residencial</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Seguro Empresarial</li>
                     </ul>
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="service-card bg-white rounded-3xl p-8 shadow-xl">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center text-4xl mb-6">
+                <div class="service-card bg-white rounded-3xl p-8 shadow border-2 border-blue-600">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
                         🏥
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4">Planos de Saúde</h3>
+                    <h3 class="text-2xl font-semibold mb-3">Planos de Saúde</h3>
+                    <p class="text-gray-600 mb-6">Os melhores planos de saúde com cobertura nacional e atendimento de excelência.</p>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Individual e Familiar</li>
                         <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Empresarial</li>
                         <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Odontológico</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Comparativo de melhores opções</li>
                     </ul>
+                    <span class="inline-block mt-6 text-xs font-medium bg-emerald-100 text-emerald-700 px-4 py-1 rounded-full">Mais Procurado</span>
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="service-card bg-white rounded-3xl p-8 shadow-xl">
-                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-4xl mb-6">
-                        📈
+                <div class="service-card bg-white rounded-3xl p-8 shadow">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        💰
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4">Previdência Complementar</h3>
+                    <h3 class="text-2xl font-semibold mb-3">Previdência Complementar</h3>
+                    <p class="text-gray-600 mb-6">Planeje seu futuro com segurança e tranquilidade.</p>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> PGBL e VGBL</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> VGBL</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> PGBL</li>
                         <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Previdência Privada</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> Planejamento de Aposentadoria</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DIFERENCIAIS -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12">
+    <!-- CTA INTERMEDIÁRIO -->
+    <section class="bg-blue-700 py-16 text-white">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold mb-4">Precisa de uma cotação personalizada?</h2>
+            <p class="text-blue-200 mb-8">Atendemos com agilidade e transparência. Entre em contato agora mesmo.</p>
+            <a href="tel:2181204081" 
+               class="inline-flex items-center gap-4 bg-white text-blue-700 hover:bg-blue-50 px-10 py-5 rounded-2xl text-xl font-semibold transition">
+                <i class="fas fa-phone text-2xl"></i>
                 <div>
-                    <h2 class="text-4xl font-bold heading-font text-blue-900 mb-8">Por que escolher a Carolina Thompson?</h2>
-                    <div class="space-y-8">
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">🔍</div>
-                            <div>
-                                <h4 class="font-semibold text-xl mb-1">Assessoria Personalizada</h4>
-                                <p class="text-gray-600">Análise completa do seu perfil e necessidades para oferecer a melhor solução.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">📞</div>
-                            <div>
-                                <h4 class="font-semibold text-xl mb-1">Suporte Rápido</h4>
-                                <p class="text-gray-600">Acompanhamento completo desde a contratação até a utilização do seguro.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl">🤝</div>
-                            <div>
-                                <h4 class="font-semibold text-xl mb-1">Múltiplas Seguradoras</h4>
-                                <p class="text-gray-600">Trabalhamos com as principais companhias do mercado para oferecer o melhor custo-benefício.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="text-lg">(21) 8120-4081</div>
+                    <div class="text-sm opacity-70">Ligar agora</div>
                 </div>
-                
-                <div class="bg-blue-50 rounded-3xl p-10 flex flex-col justify-center">
-                    <div class="text-6xl font-light text-blue-900 mb-6">"A melhor decisão que tomei foi confiar na Carolina Thompson para proteger minha família."</div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
-                        <div>
-                            <div class="font-semibold">João Mendes</div>
-                            <div class="text-sm text-gray-500">Cliente desde 2022</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="py-20 bg-gray-900 text-white">
+    <section id="contato" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Formulário -->
                 <div>
-                    <h2 class="text-4xl font-bold heading-font mb-8">Entre em Contato</h2>
-                    <p class="text-xl text-gray-300 mb-10">
-                        Vamos encontrar a melhor proteção para você e sua família. 
-                        Responda em até 24h úteis.
-                    </p>
+                    <h2 class="text-4xl font-bold mb-8">Entre em Contato</h2>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Nome Completo</label>
+                                <input type="text" id="nome" required class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Telefone</label>
+                                <input type="tel" id="telefone" required class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Qual serviço você precisa?</label>
+                            <select id="servico" class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                                <option value="">Selecione uma opção</option>
+                                <option value="seguro">Seguro em Geral</option>
+                                <option value="saude">Plano de Saúde</option>
+                                <option value="previdencia">Previdência Complementar</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Mensagem</label>
+                            <textarea id="mensagem" rows="5" class="w-full px-5 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-blue-500 resize-y" placeholder="Descreva sua necessidade..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-2xl font-semibold text-lg transition">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="bg-gray-50 rounded-3xl p-10">
+                    <h3 class="text-2xl font-semibold mb-8">Nossos Contatos</h3>
                     
                     <div class="space-y-8">
-                        <div class="flex items-center gap-5">
-                            <i class="fas fa-phone text-3xl text-blue-400 w-10"></i>
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">📍</div>
                             <div>
-                                <div class="font-medium">Telefone / WhatsApp</div>
-                                <a href="tel:+552181204081" class="text-2xl hover:text-blue-400">(21) 8120-4081</a>
+                                <p class="font-medium">Endereço</p>
+                                <p class="text-gray-600">Av. Professor Plínio Bastos, 205<br>Olaria, Rio de Janeiro - RJ<br>CEP: 21.021-350</p>
                             </div>
                         </div>
                         
-                        <div class="flex items-center gap-5">
-                            <i class="fas fa-envelope text-3xl text-blue-400 w-10"></i>
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">📱</div>
                             <div>
-                                <div class="font-medium">E-mail</div>
-                                <a href="mailto:carolaraujo1407@gmail.com" class="hover:text-blue-400">carolaraujo1407@gmail.com</a>
+                                <p class="font-medium">Telefone / WhatsApp</p>
+                                <a href="tel:2181204081" class="text-blue-600 hover:underline">(21) 8120-4081</a>
                             </div>
                         </div>
                         
-                        <div class="flex items-start gap-5">
-                            <i class="fas fa-map-marker-alt text-3xl text-blue-400 w-10 mt-1"></i>
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">✉️</div>
                             <div>
-                                <div class="font-medium">Endereço</div>
-                                <div class="text-gray-400">
-                                    Av. Professor Plínio Bastos, 205<br>
-                                    Olaria - Rio de Janeiro, RJ<br>
-                                    CEP: 21.021-350
-                                </div>
+                                <p class="font-medium">E-mail</p>
+                                <a href="mailto:carolaraujo1407@gmail.com" class="text-blue-600 hover:underline">carolaraujo1407@gmail.com</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- FORMULÁRIO -->
-                <div class="bg-white text-gray-900 rounded-3xl p-8 shadow-2xl">
-                    <form id="contactForm" onsubmit="enviarFormulario(event)" class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Nome completo</label>
-                            <input type="text" id="nome" required
-                                   class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
-                        </div>
-                        <div class="grid grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium mb-2">Telefone / WhatsApp</label>
-                                <input type="tel" id="telefone" required
-                                       class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium mb-2">E-mail</label>
-                                <input type="email" id="email"
-                                       class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Qual serviço tem interesse?</label>
-                            <select id="servico" required
-                                    class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
-                                <option value="">Selecione uma opção</option>
-                                <option value="Seguro Residencial">Seguro Residencial</option>
-                                <option value="Plano de Saúde">Plano de Saúde</option>
-                                <option value="Previdência">Previdência Complementar</option>
-                                <option value="Seguro de Vida">Seguro de Vida</option>
-                                <option value="Outros">Outros</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Mensagem</label>
-                            <textarea id="mensagem" rows="4" placeholder="Descreva brevemente sua necessidade..."
-                                      class="w-full px-5 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-blue-500"></textarea>
-                        </div>
-                        <button type="submit"
-                                class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-5 rounded-2xl text-lg transition-all">
-                            ENVIAR MENSAGEM
-                        </button>
-                    </form>
+                    
+                    <div class="mt-12 pt-12 border-t border-gray-200">
+                        <p class="text-sm text-gray-500">Horário de Atendimento</p>
+                        <p class="font-medium">Segunda a Sexta: 08h às 18h</p>
+                        <p class="text-sm text-gray-500 mt-6">Atendemos por WhatsApp também!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -363,88 +348,77 @@
     <!-- FOOTER -->
     <footer class="footer text-white py-16">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-12">
+            <div class="grid md:grid-cols-4 gap-10">
                 <div>
                     <div class="flex items-center gap-3 text-white mb-6">
-                        <div class="w-10 h-10 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center text-3xl font-bold">
-                            CT
+                        <div class="w-10 h-10 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center font-bold text-xl">CT</div>
+                        <div>
+                            <span class="font-bold text-xl">Carolina Thompson</span>
                         </div>
-                        <div class="heading-font text-2xl">CAROLINA THOMPSON</div>
                     </div>
-                    <p class="text-blue-200">
-                        Corretora de Seguros LTDA
-                    </p>
-                    <p class="text-sm text-blue-300 mt-4">
-                        CNPJ: 49.637.066/0001-86
-                    </p>
+                    <p class="text-blue-200 text-sm">Sua segurança é nossa prioridade.</p>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-6 text-blue-100">Links Rápidos</h4>
-                    <div class="space-y-3 text-blue-200">
-                        <a href="#sobre" class="block hover:text-white">Sobre Nós</a>
-                        <a href="#servicos" class="block hover:text-white">Serviços</a>
-                        <a href="#contato" class="block hover:text-white">Contato</a>
-                    </div>
+                    <h4 class="font-semibold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-blue-200 text-sm">
+                        <li><a href="#sobre" class="hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="hover:text-white">Serviços</a></li>
+                        <li><a href="#contato" class="hover:text-white">Contato</a></li>
+                    </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-6 text-blue-100">Contato</h4>
-                    <div class="space-y-3 text-sm text-blue-200">
-                        <p><i class="fas fa-phone mr-3"></i> (21) 8120-4081</p>
-                        <p><i class="fas fa-envelope mr-3"></i> carolaraujo1407@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt mr-3"></i> Av. Professor Plínio Bastos, 205 - Olaria, RJ</p>
-                    </div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-blue-200 text-sm">
+                        <li><a href="#" class="hover:text-white">Política de Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white">Termos de Uso</a></li>
+                        <li>CNPJ: 49.637.066/0001-86</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="border-t border-blue-800 mt-16 pt-8 text-center text-sm text-blue-300">
-                © 2026 Carolina Thompson Corretora de Seguros LTDA. Todos os direitos reservados.
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Siga-nos</h4>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-xs text-blue-300 mt-10">© 2026 Carolina Thompson Corretora de Seguros LTDA.<br>Todos os direitos reservados.</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Tailwind script já carregado via CDN
+        // Tailwind script already loaded via CDN
         
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-        
-        function enviarFormulario(e) {
+        // Form submission simulation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const nome = document.getElementById('nome').value;
-            const telefone = document.getElementById('telefone').value;
             
-            alert(`✅ Obrigado, ${nome.split(' ')[0]}! \n\nSua mensagem foi enviada com sucesso.\n\nEntraremos em contato em breve pelo telefone ${telefone}.`);
-            
-            // Limpa o formulário
-            document.getElementById('contactForm').reset();
-        }
+            if (nome) {
+                alert(`Obrigado, ${nome.split(' ')[0]}! Sua mensagem foi enviada com sucesso.\n\nEm breve entraremos em contato.`);
+                this.reset();
+            }
+        });
         
-        // Scroll suave
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 if (this.getAttribute('href') !== '#') {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
         
-        // Fecha menu mobile ao clicar em link
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                document.getElementById('mobileMenu').classList.add('hidden');
-            }
-        });
+        // Mobile menu (simple version)
+        console.log('%c✅ Site da Carolina Thompson carregado com sucesso!', 'color: #3b82f6; font-weight: bold;');
     </script>
 </body>
 </html>
